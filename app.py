@@ -1,4 +1,6 @@
 import streamlit as st
+import altair as alt
+import plotly.graph_objects as go
 from modules import active_wallets, tps_fees, transaction_types, top_contracts, forecasting
 
 st.set_page_config(page_title="Solana 5-Year Dashboard", layout="wide")
@@ -85,7 +87,7 @@ with tabs[2]:
     chart_contracts = top_contracts.plot_top_contracts(df_contracts_agg, year=selected_year)
     st.altair_chart(chart_contracts, use_container_width=True)
 
-# ==================== Forecast ====================
+# ==================== Forecast (Plotly) ====================
 with tabs[3]:
     st.subheader("Active Wallets & TPS Forecast (Prophet)")
     st.markdown("**The model uses data from the past 36 months to forecast the next {} months.**".format(forecast_months))
@@ -94,21 +96,58 @@ with tabs[3]:
     forecast_wallets, df_recent_wallets = forecasting.forecast_trend(
         df_wallets, 'month', 'active_wallets', periods=forecast_months
     )
-    chart_wallets_forecast = forecasting.plot_forecast(
-        df_recent_wallets.rename(columns={'month':'ds','active_wallets':'y'}), forecast_wallets, 
-        "Active Wallets Forecast"
+
+    fig_wallets = go.Figure()
+    fig_wallets.add_trace(go.Scatter(
+        x=df_recent_wallets['month'], y=df_recent_wallets['active_wallets'],
+        mode='lines+markers', name='Actual', line=dict(color='blue')
+    ))
+    fig_wallets.add_trace(go.Scatter(
+        x=forecast_wallets['ds'], y=forecast_wallets['yhat'],
+        mode='lines', name='Forecast', line=dict(color='orange', dash='dash')
+    ))
+    fig_wallets.add_trace(go.Scatter(
+        x=list(forecast_wallets['ds']) + list(forecast_wallets['ds'][::-1]),
+        y=list(forecast_wallets['yhat_upper']) + list(forecast_wallets['yhat_lower'][::-1]),
+        fill='toself', fillcolor='rgba(255,165,0,0.2)', line=dict(color='rgba(255,255,255,0)'), showlegend=False
+    ))
+    fig_wallets.update_layout(
+        title='Active Wallets Forecast',
+        xaxis_title='Date',
+        yaxis_title='Active Wallets',
+        yaxis=dict(tickformat=','),
+        template='plotly_white',
+        width=800, height=400
     )
-    st.altair_chart(chart_wallets_forecast, use_container_width=True)
+    st.plotly_chart(fig_wallets, use_container_width=True)
 
     # --- TPS Forecast ---
     forecast_tps, df_recent_tps = forecasting.forecast_trend(
         df_tps, 'month', 'tps', periods=forecast_months
     )
-    chart_tps_forecast = forecasting.plot_forecast(
-        df_recent_tps.rename(columns={'month':'ds','tps':'y'}), forecast_tps, 
-        "TPS Forecast"
+
+    fig_tps = go.Figure()
+    fig_tps.add_trace(go.Scatter(
+        x=df_recent_tps['month'], y=df_recent_tps['tps'],
+        mode='lines+markers', name='Actual', line=dict(color='green')
+    ))
+    fig_tps.add_trace(go.Scatter(
+        x=forecast_tps['ds'], y=forecast_tps['yhat'],
+        mode='lines', name='Forecast', line=dict(color='red', dash='dash')
+    ))
+    fig_tps.add_trace(go.Scatter(
+        x=list(forecast_tps['ds']) + list(forecast_tps['ds'][::-1]),
+        y=list(forecast_tps['yhat_upper']) + list(forecast_tps['yhat_lower'][::-1]),
+        fill='toself', fillcolor='rgba(255,0,0,0.2)', line=dict(color='rgba(255,255,255,0)'), showlegend=False
+    ))
+    fig_tps.update_layout(
+        title='TPS Forecast',
+        xaxis_title='Date',
+        yaxis_title='TPS',
+        yaxis=dict(tickformat=','),
+        template='plotly_white',
+        width=800, height=400
     )
-    st.altair_chart(chart_tps_forecast, use_container_width=True)
+    st.plotly_chart(fig_tps, use_container_width=True)
 
 st.markdown("**Data Source:** Simulated data based on Solana public market trends (2020–2025)")
-
