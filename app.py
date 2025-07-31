@@ -1,7 +1,7 @@
 import streamlit as st
 import altair as alt
 import plotly.graph_objects as go
-from modules import active_wallets, tps_fees, transaction_types, top_contracts, forecasting
+from modules import active_wallets, tps_fees, transaction_types, top_contracts, forecasting, representative_projects
 
 st.set_page_config(page_title="Solana 5-Year Dashboard", layout="wide")
 st.title("Solana 5-Year Dashboard")
@@ -23,12 +23,12 @@ tabs = st.tabs([
     "📊 Overview",
     "🔍 Transaction Types",
     "🔥 Top Contracts",
-    "📈 Forecasting"
+    "📈 Forecasting",
+    "🏆 Representative Projects"   # <--- 新增
 ])
 
 # ==================== Overview ====================
 with tabs[0]:
-    # --- Active Wallets ---
     st.subheader("Active Wallets")
     if view_type == "Quarterly":
         df_wallets_agg = active_wallets.aggregate_by_quarter(df_wallets)
@@ -41,7 +41,6 @@ with tabs[0]:
     chart_wallets = active_wallets.plot_active_wallets(df_wallets_agg, x_col=x_col, title=title)
     st.altair_chart(chart_wallets, use_container_width=True)
 
-    # --- TPS & Transaction Fees ---
     st.subheader("TPS & Transaction Fees")
     tps_type = st.radio("Select display type", ["Effective TPS", "Total TPS"], horizontal=True)
     y_col = 'tps' if tps_type == "Effective TPS" else 'total_tps'
@@ -92,7 +91,6 @@ with tabs[3]:
     st.subheader("Active Wallets & TPS Forecast (Prophet)")
     st.markdown("**The model uses data from the past 36 months to forecast the next {} months.**".format(forecast_months))
     
-    # --- Active Wallets Forecast ---
     forecast_wallets, df_recent_wallets = forecasting.forecast_trend(
         df_wallets, 'month', 'active_wallets', periods=forecast_months
     )
@@ -121,7 +119,6 @@ with tabs[3]:
     )
     st.plotly_chart(fig_wallets, use_container_width=True)
 
-    # --- TPS Forecast ---
     forecast_tps, df_recent_tps = forecasting.forecast_trend(
         df_tps, 'month', 'tps', periods=forecast_months
     )
@@ -150,4 +147,96 @@ with tabs[3]:
     )
     st.plotly_chart(fig_tps, use_container_width=True)
 
-st.markdown("**Data Source:** Simulated data based on Solana public market trends (2020–2025)")
+# # ==================== Representative Projects ====================
+# with tabs[4]:
+#     st.subheader("Top DeFi & NFT Projects (Latest Month)")
+
+#     defi_top5, nft_top5, full_data = representative_projects.load_representative_projects()
+
+#     # --- DeFi 長條圖 ---
+# colors_defi = ['#0052A3', '#7EC8E3', '#E63946', '#F28C8C', '#1f77b4']
+# fig_defi = go.Figure(
+#     data=[go.Bar(x=defi_top5['name'], y=defi_top5['share_percent'], marker_color=colors_defi)]
+# )
+# fig_defi.update_layout(
+#     title="Top 5 DeFi Projects",
+#     xaxis_title="Project",
+#     yaxis_title="Share (%)",
+#     template="plotly_white"
+# )
+# st.plotly_chart(fig_defi, use_container_width=True)
+
+# # --- NFT 長條圖 ---
+# colors_nft =  ['#E63946', '#F28C8C', '#7EC8E3', '#0052A3', '#ff7f0e']
+# fig_nft = go.Figure(
+#     data=[go.Bar(x=nft_top5['name'], y=nft_top5['share_percent'], marker_color=colors_nft)]
+# )
+# fig_nft.update_layout(
+#     title="Top 5 NFT/Swap Projects",
+#     xaxis_title="Project",
+#     yaxis_title="Share (%)",
+#     template="plotly_white"
+# )
+# st.plotly_chart(fig_nft, use_container_width=True)
+
+
+
+# st.markdown("**Data Source:** Simulated data based on Solana public market trends (2020–2025)")
+
+
+# ==================== Representative Projects ====================
+with tabs[4]:
+    st.subheader("5-Year Annual Top Projects (DeFi & NFT)")
+
+    df_trends = representative_projects.load_representative_trends()
+    df_trends['year'] = df_trends['month'].dt.year
+
+    # 聚合到年度
+    df_yearly = df_trends.groupby(['year', 'name', 'type'], as_index=False)['share_percent'].mean()
+
+    # DeFi Top5 每年
+    df_defi = df_yearly[df_yearly['type'].str.contains("DeFi", case=False)]
+    df_defi_top5 = df_defi.groupby('year').apply(lambda g: g.nlargest(5, 'share_percent')).reset_index(drop=True)
+
+    # NFT Top5 每年
+    df_nft = df_yearly[df_yearly['type'].str.contains("NFT", case=False)]
+    df_nft_top5 = df_nft.groupby('year').apply(lambda g: g.nlargest(5, 'share_percent')).reset_index(drop=True)
+
+    # --- DeFi 長條圖 ---
+    colors_defi = ['#0052A3', '#7EC8E3', '#E63946', '#F28C8C', '#1f77b4']
+    fig_defi = go.Figure()
+    for idx, name in enumerate(df_defi_top5['name'].unique()):
+        sub = df_defi_top5[df_defi_top5['name'] == name]
+        fig_defi.add_trace(go.Bar(
+            x=sub['year'], y=sub['share_percent'], name=name,
+            marker_color=colors_defi[idx % len(colors_defi)]
+        ))
+    fig_defi.update_layout(
+        barmode='group',
+        title="Top 5 DeFi Projects by Year",
+        xaxis_title="Year",
+        yaxis_title="Share (%)",
+        template="plotly_white"
+    )
+    st.plotly_chart(fig_defi, use_container_width=True)
+
+    # --- NFT 長條圖 ---
+    colors_nft = ['#E63946', '#F28C8C', '#7EC8E3', '#0052A3', '#ff7f0e']
+    fig_nft = go.Figure()
+    for idx, name in enumerate(df_nft_top5['name'].unique()):
+        sub = df_nft_top5[df_nft_top5['name'] == name]
+        fig_nft.add_trace(go.Bar(
+            x=sub['year'], y=sub['share_percent'], name=name,
+            marker_color=colors_nft[idx % len(colors_nft)]
+        ))
+    fig_nft.update_layout(
+        barmode='group',
+        title="Top 5 NFT/Swap Projects by Year",
+        xaxis_title="Year",
+        yaxis_title="Share (%)",
+        template="plotly_white"
+    )
+
+    st.plotly_chart(fig_nft, use_container_width=True)
+
+    st.markdown("**Data Source:** Simulated data based on Solana public market trends (2020–2025)")

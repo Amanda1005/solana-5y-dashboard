@@ -1,0 +1,604 @@
+month,protocol,category,tx_count
+2020-01,Raydium,DeFi,86808
+2020-01,Orca,DeFi,54174
+2020-01,Serum,DeFi,32081
+2020-01,Solend,DeFi,14601
+2020-01,Magic Eden,NFT,18221
+2020-01,Tensor,NFT,10399
+2020-01,Solanart,NFT,8367
+2020-01,Solana Vote Program,Vote,213502
+2020-01,Token Program,Transfer,111370
+2020-02,Raydium,DeFi,87540
+2020-02,Orca,DeFi,50260
+2020-02,Serum,DeFi,32239
+2020-02,Solend,DeFi,15887
+2020-02,Magic Eden,NFT,24017
+2020-02,Tensor,NFT,10946
+2020-02,Solanart,NFT,8862
+2020-02,Solana Vote Program,Vote,203851
+2020-02,Token Program,Transfer,113308
+2020-03,Raydium,DeFi,85371
+2020-03,Orca,DeFi,57726
+2020-03,Serum,DeFi,28818
+2020-03,Solend,DeFi,16998
+2020-03,Magic Eden,NFT,22649
+2020-03,Tensor,NFT,11165
+2020-03,Solanart,NFT,9080
+2020-03,Solana Vote Program,Vote,227557
+2020-03,Token Program,Transfer,106842
+2020-04,Raydium,DeFi,92875
+2020-04,Orca,DeFi,58470
+2020-04,Serum,DeFi,31415
+2020-04,Solend,DeFi,16792
+2020-04,Magic Eden,NFT,22889
+2020-04,Tensor,NFT,11792
+2020-04,Solanart,NFT,9423
+2020-04,Solana Vote Program,Vote,234436
+2020-04,Token Program,Transfer,104762
+2020-05,Raydium,DeFi,85541
+2020-05,Orca,DeFi,59210
+2020-05,Serum,DeFi,30804
+2020-05,Solend,DeFi,14840
+2020-05,Magic Eden,NFT,22494
+2020-05,Tensor,NFT,11271
+2020-05,Solanart,NFT,8841
+2020-05,Solana Vote Program,Vote,193665
+2020-05,Token Program,Transfer,105188
+2020-06,Raydium,DeFi,79114
+2020-06,Orca,DeFi,48212
+2020-06,Serum,DeFi,31680
+2020-06,Solend,DeFi,14814
+2020-06,Magic Eden,NFT,19435
+2020-06,Tensor,NFT,10110
+2020-06,Solanart,NFT,8491
+2020-06,Solana Vote Program,Vote,200363
+2020-06,Token Program,Transfer,102574
+2020-07,Raydium,DeFi,73313
+2020-07,Orca,DeFi,48074
+2020-07,Serum,DeFi,28941
+2020-07,Solend,DeFi,13746
+2020-07,Magic Eden,NFT,19568
+2020-07,Tensor,NFT,9868
+2020-07,Solanart,NFT,8028
+2020-07,Solana Vote Program,Vote,211624
+2020-07,Token Program,Transfer,89151
+2020-08,Raydium,DeFi,67737
+2020-08,Orca,DeFi,45455
+2020-08,Serum,DeFi,29077
+2020-08,Solend,DeFi,14126
+2020-08,Magic Eden,NFT,18436
+2020-08,Tensor,NFT,9995
+2020-08,Solanart,NFT,7091
+2020-08,Solana Vote Program,Vote,177449
+2020-08,Token Program,Transfer,90310
+2020-09,Raydium,DeFi,68069
+2020-09,Orca,DeFi,47927
+2020-09,Serum,DeFi,25370
+2020-09,Solend,DeFi,13373
+2020-09,Magic Eden,NFT,19087
+2020-09,Tensor,NFT,9811
+2020-09,Solanart,NFT,6816
+2020-09,Solana Vote Program,Vote,165501
+2020-09,Token Program,Transfer,95968
+2020-10,Raydium,DeFi,75174
+2020-10,Orca,DeFi,49181
+2020-10,Serum,DeFi,26666
+2020-10,Solend,DeFi,12937
+2020-10,Magic Eden,NFT,17729
+2020-10,Tensor,NFT,9022
+2020-10,Solanart,NFT,7841
+2020-10,Solana Vote Program,Vote,171442
+2020-10,Token Program,Transfer,92924
+2020-11,Raydium,DeFi,77503
+2020-11,Orca,DeFi,49642
+2020-11,Serum,DeFi,27902
+2020-11,Solend,DeFi,13412
+2020-11,Magic Eden,NFT,19442
+2020-11,Tensor,NFT,8811
+2020-11,Solanart,NFT,7292
+2020-11,Solana Vote Program,Vote,204417
+2020-11,Token Program,Transfer,91953
+2020-12,Raydium,DeFi,73220
+2020-12,Orca,DeFi,47716
+2020-12,Serum,DeFi,26653
+2020-12,Solend,DeFi,16387
+2020-12,Magic Eden,NFT,19132
+2020-12,Tensor,NFT,10062
+2020-12,Solanart,NFT,8511
+2020-12,Solana Vote Program,Vote,199673
+2020-12,Token Program,Transfer,103042
+2021-01,Raydium,DeFi,112343
+2021-01,Orca,DeFi,67183
+2021-01,Serum,DeFi,38130
+2021-01,Solend,DeFi,21414
+2021-01,Magic Eden,NFT,27601
+2021-01,Tensor,NFT,13208
+2021-01,Solanart,NFT,10490
+2021-01,Solana Vote Program,Vote,249471
+2021-01,Token Program,Transfer,128666
+2021-02,Raydium,DeFi,102863
+2021-02,Orca,DeFi,68378
+2021-02,Serum,DeFi,40997
+2021-02,Solend,DeFi,20161
+2021-02,Magic Eden,NFT,26903
+2021-02,Tensor,NFT,13359
+2021-02,Solanart,NFT,10391
+2021-02,Solana Vote Program,Vote,260998
+2021-02,Token Program,Transfer,130848
+2021-03,Raydium,DeFi,97251
+2021-03,Orca,DeFi,67853
+2021-03,Serum,DeFi,41993
+2021-03,Solend,DeFi,19669
+2021-03,Magic Eden,NFT,27910
+2021-03,Tensor,NFT,13200
+2021-03,Solanart,NFT,10976
+2021-03,Solana Vote Program,Vote,274436
+2021-03,Token Program,Transfer,128556
+2021-04,Raydium,DeFi,100707
+2021-04,Orca,DeFi,69071
+2021-04,Serum,DeFi,42164
+2021-04,Solend,DeFi,21016
+2021-04,Magic Eden,NFT,25419
+2021-04,Tensor,NFT,15551
+2021-04,Solanart,NFT,11229
+2021-04,Solana Vote Program,Vote,275407
+2021-04,Token Program,Transfer,133989
+2021-05,Raydium,DeFi,107663
+2021-05,Orca,DeFi,61164
+2021-05,Serum,DeFi,36766
+2021-05,Solend,DeFi,18442
+2021-05,Magic Eden,NFT,26632
+2021-05,Tensor,NFT,13485
+2021-05,Solanart,NFT,10239
+2021-05,Solana Vote Program,Vote,258274
+2021-05,Token Program,Transfer,130075
+2021-06,Raydium,DeFi,104136
+2021-06,Orca,DeFi,60768
+2021-06,Serum,DeFi,38514
+2021-06,Solend,DeFi,18572
+2021-06,Magic Eden,NFT,25327
+2021-06,Tensor,NFT,12173
+2021-06,Solanart,NFT,8581
+2021-06,Solana Vote Program,Vote,254692
+2021-06,Token Program,Transfer,122041
+2021-07,Raydium,DeFi,93474
+2021-07,Orca,DeFi,60107
+2021-07,Serum,DeFi,37408
+2021-07,Solend,DeFi,19094
+2021-07,Magic Eden,NFT,25072
+2021-07,Tensor,NFT,12764
+2021-07,Solanart,NFT,9923
+2021-07,Solana Vote Program,Vote,231386
+2021-07,Token Program,Transfer,111943
+2021-08,Raydium,DeFi,91132
+2021-08,Orca,DeFi,57988
+2021-08,Serum,DeFi,35644
+2021-08,Solend,DeFi,17557
+2021-08,Magic Eden,NFT,22415
+2021-08,Tensor,NFT,12187
+2021-08,Solanart,NFT,8867
+2021-08,Solana Vote Program,Vote,236322
+2021-08,Token Program,Transfer,109255
+2021-09,Raydium,DeFi,88905
+2021-09,Orca,DeFi,58264
+2021-09,Serum,DeFi,32265
+2021-09,Solend,DeFi,16750
+2021-09,Magic Eden,NFT,24644
+2021-09,Tensor,NFT,10834
+2021-09,Solanart,NFT,9262
+2021-09,Solana Vote Program,Vote,223004
+2021-09,Token Program,Transfer,102964
+2021-10,Raydium,DeFi,93258
+2021-10,Orca,DeFi,56784
+2021-10,Serum,DeFi,37543
+2021-10,Solend,DeFi,17264
+2021-10,Magic Eden,NFT,22935
+2021-10,Tensor,NFT,11871
+2021-10,Solanart,NFT,9285
+2021-10,Solana Vote Program,Vote,218229
+2021-10,Token Program,Transfer,111390
+2021-11,Raydium,DeFi,95282
+2021-11,Orca,DeFi,54568
+2021-11,Serum,DeFi,32409
+2021-11,Solend,DeFi,18155
+2021-11,Magic Eden,NFT,23294
+2021-11,Tensor,NFT,12108
+2021-11,Solanart,NFT,9813
+2021-11,Solana Vote Program,Vote,237063
+2021-11,Token Program,Transfer,119876
+2021-12,Raydium,DeFi,100902
+2021-12,Orca,DeFi,65327
+2021-12,Serum,DeFi,41204
+2021-12,Solend,DeFi,18044
+2021-12,Magic Eden,NFT,25753
+2021-12,Tensor,NFT,12220
+2021-12,Solanart,NFT,10166
+2021-12,Solana Vote Program,Vote,247016
+2021-12,Token Program,Transfer,120577
+2022-01,Raydium,DeFi,125050
+2022-01,Orca,DeFi,82196
+2022-01,Serum,DeFi,45150
+2022-01,Solend,DeFi,23643
+2022-01,Magic Eden,NFT,29237
+2022-01,Tensor,NFT,15345
+2022-01,Solanart,NFT,13323
+2022-01,Solana Vote Program,Vote,305984
+2022-01,Token Program,Transfer,166697
+2022-02,Raydium,DeFi,129700
+2022-02,Orca,DeFi,81353
+2022-02,Serum,DeFi,49594
+2022-02,Solend,DeFi,25056
+2022-02,Magic Eden,NFT,29990
+2022-02,Tensor,NFT,15580
+2022-02,Solanart,NFT,12811
+2022-02,Solana Vote Program,Vote,342079
+2022-02,Token Program,Transfer,172738
+2022-03,Raydium,DeFi,127635
+2022-03,Orca,DeFi,79193
+2022-03,Serum,DeFi,52883
+2022-03,Solend,DeFi,25237
+2022-03,Magic Eden,NFT,34203
+2022-03,Tensor,NFT,15486
+2022-03,Solanart,NFT,12723
+2022-03,Solana Vote Program,Vote,298944
+2022-03,Token Program,Transfer,166538
+2022-04,Raydium,DeFi,131252
+2022-04,Orca,DeFi,74337
+2022-04,Serum,DeFi,47249
+2022-04,Solend,DeFi,26255
+2022-04,Magic Eden,NFT,34729
+2022-04,Tensor,NFT,15872
+2022-04,Solanart,NFT,13066
+2022-04,Solana Vote Program,Vote,333058
+2022-04,Token Program,Transfer,171413
+2022-05,Raydium,DeFi,126989
+2022-05,Orca,DeFi,81382
+2022-05,Serum,DeFi,51131
+2022-05,Solend,DeFi,23312
+2022-05,Magic Eden,NFT,30791
+2022-05,Tensor,NFT,15683
+2022-05,Solanart,NFT,12860
+2022-05,Solana Vote Program,Vote,324317
+2022-05,Token Program,Transfer,153874
+2022-06,Raydium,DeFi,125660
+2022-06,Orca,DeFi,70500
+2022-06,Serum,DeFi,46654
+2022-06,Solend,DeFi,24220
+2022-06,Magic Eden,NFT,29900
+2022-06,Tensor,NFT,16288
+2022-06,Solanart,NFT,12005
+2022-06,Solana Vote Program,Vote,289641
+2022-06,Token Program,Transfer,153910
+2022-07,Raydium,DeFi,118582
+2022-07,Orca,DeFi,68740
+2022-07,Serum,DeFi,45158
+2022-07,Solend,DeFi,19742
+2022-07,Magic Eden,NFT,28026
+2022-07,Tensor,NFT,15548
+2022-07,Solanart,NFT,10868
+2022-07,Solana Vote Program,Vote,263102
+2022-07,Token Program,Transfer,133590
+2022-08,Raydium,DeFi,117549
+2022-08,Orca,DeFi,67252
+2022-08,Serum,DeFi,42322
+2022-08,Solend,DeFi,20303
+2022-08,Magic Eden,NFT,26793
+2022-08,Tensor,NFT,14373
+2022-08,Solanart,NFT,11244
+2022-08,Solana Vote Program,Vote,284224
+2022-08,Token Program,Transfer,138744
+2022-09,Raydium,DeFi,106806
+2022-09,Orca,DeFi,66719
+2022-09,Serum,DeFi,40541
+2022-09,Solend,DeFi,22009
+2022-09,Magic Eden,NFT,28069
+2022-09,Tensor,NFT,13393
+2022-09,Solanart,NFT,11341
+2022-09,Solana Vote Program,Vote,273026
+2022-09,Token Program,Transfer,133833
+2022-10,Raydium,DeFi,114795
+2022-10,Orca,DeFi,62787
+2022-10,Serum,DeFi,42598
+2022-10,Solend,DeFi,20996
+2022-10,Magic Eden,NFT,27708
+2022-10,Tensor,NFT,13752
+2022-10,Solanart,NFT,11217
+2022-10,Solana Vote Program,Vote,280314
+2022-10,Token Program,Transfer,142307
+2022-11,Raydium,DeFi,113832
+2022-11,Orca,DeFi,76887
+2022-11,Serum,DeFi,45795
+2022-11,Solend,DeFi,20275
+2022-11,Magic Eden,NFT,26297
+2022-11,Tensor,NFT,14108
+2022-11,Solanart,NFT,10877
+2022-11,Solana Vote Program,Vote,294885
+2022-11,Token Program,Transfer,132984
+2022-12,Raydium,DeFi,127058
+2022-12,Orca,DeFi,69739
+2022-12,Serum,DeFi,44559
+2022-12,Solend,DeFi,22763
+2022-12,Magic Eden,NFT,29404
+2022-12,Tensor,NFT,15452
+2022-12,Solanart,NFT,12013
+2022-12,Solana Vote Program,Vote,310652
+2022-12,Token Program,Transfer,153686
+2023-01,Raydium,DeFi,146886
+2023-01,Orca,DeFi,93610
+2023-01,Serum,DeFi,56918
+2023-01,Solend,DeFi,28025
+2023-01,Magic Eden,NFT,34107
+2023-01,Tensor,NFT,18286
+2023-01,Solanart,NFT,15169
+2023-01,Solana Vote Program,Vote,339588
+2023-01,Token Program,Transfer,181636
+2023-02,Raydium,DeFi,170368
+2023-02,Orca,DeFi,106965
+2023-02,Serum,DeFi,56779
+2023-02,Solend,DeFi,28661
+2023-02,Magic Eden,NFT,38635
+2023-02,Tensor,NFT,19041
+2023-02,Solanart,NFT,16058
+2023-02,Solana Vote Program,Vote,397340
+2023-02,Token Program,Transfer,168312
+2023-03,Raydium,DeFi,158680
+2023-03,Orca,DeFi,98904
+2023-03,Serum,DeFi,61530
+2023-03,Solend,DeFi,30634
+2023-03,Magic Eden,NFT,40211
+2023-03,Tensor,NFT,19149
+2023-03,Solanart,NFT,15272
+2023-03,Solana Vote Program,Vote,369469
+2023-03,Token Program,Transfer,181092
+2023-04,Raydium,DeFi,156991
+2023-04,Orca,DeFi,90018
+2023-04,Serum,DeFi,56363
+2023-04,Solend,DeFi,27169
+2023-04,Magic Eden,NFT,39546
+2023-04,Tensor,NFT,18888
+2023-04,Solanart,NFT,15740
+2023-04,Solana Vote Program,Vote,390877
+2023-04,Token Program,Transfer,182584
+2023-05,Raydium,DeFi,145291
+2023-05,Orca,DeFi,87576
+2023-05,Serum,DeFi,54046
+2023-05,Solend,DeFi,29370
+2023-05,Magic Eden,NFT,36955
+2023-05,Tensor,NFT,17023
+2023-05,Solanart,NFT,14980
+2023-05,Solana Vote Program,Vote,391446
+2023-05,Token Program,Transfer,202941
+2023-06,Raydium,DeFi,147801
+2023-06,Orca,DeFi,87059
+2023-06,Serum,DeFi,54754
+2023-06,Solend,DeFi,25253
+2023-06,Magic Eden,NFT,35548
+2023-06,Tensor,NFT,16836
+2023-06,Solanart,NFT,14177
+2023-06,Solana Vote Program,Vote,336584
+2023-06,Token Program,Transfer,177397
+2023-07,Raydium,DeFi,133117
+2023-07,Orca,DeFi,74658
+2023-07,Serum,DeFi,52938
+2023-07,Solend,DeFi,23090
+2023-07,Magic Eden,NFT,35990
+2023-07,Tensor,NFT,17578
+2023-07,Solanart,NFT,13325
+2023-07,Solana Vote Program,Vote,341581
+2023-07,Token Program,Transfer,175815
+2023-08,Raydium,DeFi,124807
+2023-08,Orca,DeFi,79899
+2023-08,Serum,DeFi,45535
+2023-08,Solend,DeFi,22107
+2023-08,Magic Eden,NFT,30653
+2023-08,Tensor,NFT,15122
+2023-08,Solanart,NFT,12593
+2023-08,Solana Vote Program,Vote,320179
+2023-08,Token Program,Transfer,154835
+2023-09,Raydium,DeFi,127014
+2023-09,Orca,DeFi,76242
+2023-09,Serum,DeFi,48812
+2023-09,Solend,DeFi,23161
+2023-09,Magic Eden,NFT,31494
+2023-09,Tensor,NFT,14786
+2023-09,Solanart,NFT,12680
+2023-09,Solana Vote Program,Vote,329798
+2023-09,Token Program,Transfer,159303
+2023-10,Raydium,DeFi,121775
+2023-10,Orca,DeFi,77082
+2023-10,Serum,DeFi,50925
+2023-10,Solend,DeFi,24147
+2023-10,Magic Eden,NFT,33277
+2023-10,Tensor,NFT,15964
+2023-10,Solanart,NFT,11511
+2023-10,Solana Vote Program,Vote,346588
+2023-10,Token Program,Transfer,151902
+2023-11,Raydium,DeFi,137517
+2023-11,Orca,DeFi,85379
+2023-11,Serum,DeFi,48641
+2023-11,Solend,DeFi,24197
+2023-11,Magic Eden,NFT,35788
+2023-11,Tensor,NFT,17304
+2023-11,Solanart,NFT,13246
+2023-11,Solana Vote Program,Vote,344246
+2023-11,Token Program,Transfer,161677
+2023-12,Raydium,DeFi,141904
+2023-12,Orca,DeFi,80076
+2023-12,Serum,DeFi,47517
+2023-12,Solend,DeFi,25378
+2023-12,Magic Eden,NFT,38213
+2023-12,Tensor,NFT,16256
+2023-12,Solanart,NFT,13211
+2023-12,Solana Vote Program,Vote,357978
+2023-12,Token Program,Transfer,189376
+2024-01,Raydium,DeFi,164328
+2024-01,Orca,DeFi,105928
+2024-01,Serum,DeFi,58008
+2024-01,Solend,DeFi,33634
+2024-01,Magic Eden,NFT,40723
+2024-01,Tensor,NFT,21436
+2024-01,Solanart,NFT,17057
+2024-01,Solana Vote Program,Vote,407156
+2024-01,Token Program,Transfer,212958
+2024-02,Raydium,DeFi,172277
+2024-02,Orca,DeFi,107911
+2024-02,Serum,DeFi,68788
+2024-02,Solend,DeFi,32193
+2024-02,Magic Eden,NFT,46930
+2024-02,Tensor,NFT,21588
+2024-02,Solanart,NFT,16346
+2024-02,Solana Vote Program,Vote,448515
+2024-02,Token Program,Transfer,224061
+2024-03,Raydium,DeFi,161166
+2024-03,Orca,DeFi,114535
+2024-03,Serum,DeFi,68595
+2024-03,Solend,DeFi,35594
+2024-03,Magic Eden,NFT,43522
+2024-03,Tensor,NFT,20528
+2024-03,Solanart,NFT,19318
+2024-03,Solana Vote Program,Vote,451476
+2024-03,Token Program,Transfer,213923
+2024-04,Raydium,DeFi,175595
+2024-04,Orca,DeFi,106272
+2024-04,Serum,DeFi,68529
+2024-04,Solend,DeFi,32885
+2024-04,Magic Eden,NFT,42357
+2024-04,Tensor,NFT,23268
+2024-04,Solanart,NFT,17409
+2024-04,Solana Vote Program,Vote,434244
+2024-04,Token Program,Transfer,215346
+2024-05,Raydium,DeFi,169546
+2024-05,Orca,DeFi,96148
+2024-05,Serum,DeFi,69202
+2024-05,Solend,DeFi,31777
+2024-05,Magic Eden,NFT,43031
+2024-05,Tensor,NFT,20641
+2024-05,Solanart,NFT,16619
+2024-05,Solana Vote Program,Vote,396590
+2024-05,Token Program,Transfer,219544
+2024-06,Raydium,DeFi,157919
+2024-06,Orca,DeFi,93468
+2024-06,Serum,DeFi,63967
+2024-06,Solend,DeFi,28119
+2024-06,Magic Eden,NFT,41095
+2024-06,Tensor,NFT,20511
+2024-06,Solanart,NFT,15685
+2024-06,Solana Vote Program,Vote,396425
+2024-06,Token Program,Transfer,230688
+2024-07,Raydium,DeFi,142756
+2024-07,Orca,DeFi,93843
+2024-07,Serum,DeFi,59026
+2024-07,Solend,DeFi,29528
+2024-07,Magic Eden,NFT,38519
+2024-07,Tensor,NFT,19034
+2024-07,Solanart,NFT,15711
+2024-07,Solana Vote Program,Vote,395334
+2024-07,Token Program,Transfer,214391
+2024-08,Raydium,DeFi,147514
+2024-08,Orca,DeFi,88324
+2024-08,Serum,DeFi,51876
+2024-08,Solend,DeFi,28920
+2024-08,Magic Eden,NFT,33454
+2024-08,Tensor,NFT,17988
+2024-08,Solanart,NFT,15115
+2024-08,Solana Vote Program,Vote,335220
+2024-08,Token Program,Transfer,183180
+2024-09,Raydium,DeFi,140333
+2024-09,Orca,DeFi,90398
+2024-09,Serum,DeFi,53545
+2024-09,Solend,DeFi,25853
+2024-09,Magic Eden,NFT,35889
+2024-09,Tensor,NFT,17435
+2024-09,Solanart,NFT,12983
+2024-09,Solana Vote Program,Vote,411516
+2024-09,Token Program,Transfer,172497
+2024-10,Raydium,DeFi,149944
+2024-10,Orca,DeFi,92607
+2024-10,Serum,DeFi,54222
+2024-10,Solend,DeFi,25969
+2024-10,Magic Eden,NFT,36583
+2024-10,Tensor,NFT,18992
+2024-10,Solanart,NFT,14352
+2024-10,Solana Vote Program,Vote,378463
+2024-10,Token Program,Transfer,171832
+2024-11,Raydium,DeFi,157760
+2024-11,Orca,DeFi,104609
+2024-11,Serum,DeFi,56566
+2024-11,Solend,DeFi,27338
+2024-11,Magic Eden,NFT,40181
+2024-11,Tensor,NFT,21732
+2024-11,Solanart,NFT,15439
+2024-11,Solana Vote Program,Vote,409597
+2024-11,Token Program,Transfer,198982
+2024-12,Raydium,DeFi,148448
+2024-12,Orca,DeFi,104044
+2024-12,Serum,DeFi,62091
+2024-12,Solend,DeFi,30945
+2024-12,Magic Eden,NFT,42474
+2024-12,Tensor,NFT,19714
+2024-12,Solanart,NFT,16337
+2024-12,Solana Vote Program,Vote,442266
+2024-12,Token Program,Transfer,203340
+2025-01,Raydium,DeFi,188508
+2025-01,Orca,DeFi,113903
+2025-01,Serum,DeFi,70416
+2025-01,Solend,DeFi,35094
+2025-01,Magic Eden,NFT,48172
+2025-01,Tensor,NFT,24627
+2025-01,Solanart,NFT,20272
+2025-01,Solana Vote Program,Vote,486200
+2025-01,Token Program,Transfer,224534
+2025-02,Raydium,DeFi,196020
+2025-02,Orca,DeFi,116094
+2025-02,Serum,DeFi,75765
+2025-02,Solend,DeFi,37895
+2025-02,Magic Eden,NFT,44100
+2025-02,Tensor,NFT,24758
+2025-02,Solanart,NFT,18559
+2025-02,Solana Vote Program,Vote,498640
+2025-02,Token Program,Transfer,226966
+2025-03,Raydium,DeFi,207377
+2025-03,Orca,DeFi,125209
+2025-03,Serum,DeFi,75518
+2025-03,Solend,DeFi,33442
+2025-03,Magic Eden,NFT,43615
+2025-03,Tensor,NFT,24597
+2025-03,Solanart,NFT,20277
+2025-03,Solana Vote Program,Vote,466584
+2025-03,Token Program,Transfer,249564
+2025-04,Raydium,DeFi,219413
+2025-04,Orca,DeFi,115601
+2025-04,Serum,DeFi,76579
+2025-04,Solend,DeFi,36586
+2025-04,Magic Eden,NFT,45247
+2025-04,Tensor,NFT,26214
+2025-04,Solanart,NFT,19298
+2025-04,Solana Vote Program,Vote,561009
+2025-04,Token Program,Transfer,245237
+2025-05,Raydium,DeFi,190970
+2025-05,Orca,DeFi,111064
+2025-05,Serum,DeFi,74786
+2025-05,Solend,DeFi,39129
+2025-05,Magic Eden,NFT,49996
+2025-05,Tensor,NFT,24078
+2025-05,Solanart,NFT,17580
+2025-05,Solana Vote Program,Vote,433223
+2025-05,Token Program,Transfer,228382
+2025-06,Raydium,DeFi,189477
+2025-06,Orca,DeFi,102531
+2025-06,Serum,DeFi,65790
+2025-06,Solend,DeFi,35580
+2025-06,Magic Eden,NFT,44117
+2025-06,Tensor,NFT,23659
+2025-06,Solanart,NFT,17234
+2025-06,Solana Vote Program,Vote,452223
+2025-06,Token Program,Transfer,231864
+2025-07,Raydium,DeFi,167839
+2025-07,Orca,DeFi,102914
+2025-07,Serum,DeFi,65145
+2025-07,Solend,DeFi,29886
+2025-07,Magic Eden,NFT,41422
+2025-07,Tensor,NFT,20836
+2025-07,Solanart,NFT,17864
+2025-07,Solana Vote Program,Vote,443458
+2025-07,Token Program,Transfer,213328
